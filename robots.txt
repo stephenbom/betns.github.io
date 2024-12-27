@@ -1,0 +1,9 @@
+# Allow all crawlers to index the site
+User-agent: *
+Allow: /
+
+# Block crawlers from accessing the board.html page
+Disallow: /board.html
+
+# Specify the location of the sitemap for better crawling
+Sitemap: https://stephenbom.github.io/betns.github.io/sitemap.xml
