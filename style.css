@@ -1,12 +1,21 @@
+/* Remove flexbox from the body */
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background-color: #f4f4f4; /* Optional: Add a background color */
 }
 
+/* Make sure the page's content has appropriate spacing */
+.container-fluid {
+    margin-top: 20px; /* Add space on top */
+}
+
+/* Ensure the image remains fluid in responsive layouts */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure that the homepage video is responsive */
 .embed-responsive {
     width: 80%; /* Adjust width as needed */
     max-width: 640px; /* Optional: Limit the maximum size */
@@ -19,12 +28,8 @@ body {
     border: none;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 768px) { /* Small screens */
+/* Media query for smaller screens (e.g., tablet, phone) */
+@media (max-width: 768px) {
     .img-fluid {
         max-width: 50%;
         margin: 0 auto; /* Center image */
